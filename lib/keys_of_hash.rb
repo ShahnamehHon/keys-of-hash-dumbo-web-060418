@@ -1,6 +1,5 @@
 class Hash
   def keys_of(arguments)
-    arguments.map do |value|
-      value[]
+    self.collect {|k, e| k if args.include?(e)}.keep_if {|e| e}
   end
 end
